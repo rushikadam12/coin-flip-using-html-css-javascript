@@ -1,7 +1,11 @@
 
+body{
+    background-image: url();
+}
 #coin{
     width: 10rem;
     height: 10rem;
+    margin: auto;
     transform-style: preserve-3d;
     position: relative;
 }
@@ -51,12 +55,12 @@
     position:absolute;
 }
 
-.animated-head{
+.animatedhead{
     animation: fliphead;
     animation-fill-mode: forwards;
     animation-duration: 3s;
 }
-.animated-tail{
+.animatedtail{
     animation: fliptail;
     animation-fill-mode: forwards;
     animation-duration: 3s;
@@ -69,6 +73,7 @@
     font-size: 20px;
     margin-right: 10px;
     text-align: center;
+    box-shadow: 0 0 10px 2px black;
 }
 .btn{
     text-align: center;
@@ -78,10 +83,17 @@
     margin-top: 20px;
     width: 150px;
     height: 50px;
+    box-shadow: 0 0 10px 2px black;
 
+}
+.win:hover{
+    background-color: rgb(84, 85, 86);
+    transition: 0.5s ease-in-out;
+    color: aliceblue;
 }
 .btn:hover{
     background-color: rgb(100, 102, 104);
+    color: aliceblue;
     transition:1s;
 }
 @keyframes fliphead{
